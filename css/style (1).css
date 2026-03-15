@@ -988,18 +988,19 @@ body {
 /* ===== 태블릿 ===== */
 @media (min-width: 768px) and (max-width: 1199px) {
   .game-background-pc {
-    display: none !important;
-  }
-
-  .game-background-mobile {
-    display: block;
+    display: block; /* !important 제거 */
     position: fixed;
-    transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.9); /* 태블릿 크기에 맞게 조정 */
     top: 50%;
     left: 50%;
     width: 90vw;
     height: 90vh;
   }
+
+  .game-background-mobile {
+    display: none !important;
+  }
+
   #gameContent {
     width: 50%;
     max-width: 700px;
