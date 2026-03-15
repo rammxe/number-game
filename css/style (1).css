@@ -51,10 +51,10 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.game-background-pc,
 .game-background-mobile {
-  display: none;
+  display: none; /* 기본값 숨김 */
 }
-
 #gameContent {
   position: absolute;
   top: 50%;
@@ -988,7 +988,6 @@ body {
 /* ===== 태블릿 ===== */
 @media (min-width: 768px) and (max-width: 1199px) {
   .game-background-pc {
-    display: block; /* !important 제거 */
     position: fixed;
     transform: translate(-50%, -50%) scale(0.9); /* 태블릿 크기에 맞게 조정 */
     top: 50%;
